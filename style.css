@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--bg--color);
+  color: var(--text-white-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:root {
+  --bg--color: #03001c;
+  --primary-color: #301e67;
+  --secondary-color: #5b8fb9;
+  --terciary-color: #b6eada;
+  --text-white-color: #fffbeb;
+  --font-size--sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+}
+
+header {
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container form {
+  width: 90%;
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.input-container form input {
+  width: 97%;
+  height: 2.5rem;
+  border-radius: 1rem;
+}
+
+.input-container--btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input-container--btn button {
+  width: 6rem;
+  height: 2.5rem;
+
+  color: var(--bg--color);
+  border-radius: 0.5rem;
+  border: none;
+
+  font-size: var(--font-size-md);
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+}
+
+.card h3 {
+  width: 100%;
+  text-align: start;
+  padding-left: 0.5rem;
+  font-size: var(--font-size-lg);
+}
+
+.card .productImg {
+  width: 95%;
+  height: 12rem;
+  border: 4px solid black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+.card--title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.card--title img {
+  width: 2rem;
+  height: 2rem;
+}
