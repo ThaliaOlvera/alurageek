@@ -4,6 +4,7 @@
 }
 
 body {
+  margin: 0px;
   min-height: 100dvh;
   background-color: var(--bg--color);
   color: var(--text-white-color);
@@ -87,6 +88,13 @@ header {
   justify-content: center;
   align-items: center;
 }
+.items-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card {
   display: flex;
@@ -113,6 +121,10 @@ header {
   border-radius: 1rem 1rem 1rem 1rem;
   margin-top: 0.5rem;
   background-color: var(--secondary-color);
+  background-image: url(src/img/VitaminaD.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card--title {
@@ -126,11 +138,6 @@ header {
   margin-bottom: 0.5rem;
   font-size: var(--font-size-lg);
   font-weight: 600;
-}
-
-.card--title img {
-  width: 2rem;
-  height: 2rem;
 }
 
 footer {
@@ -161,4 +168,114 @@ p {
 .info_links a {
   text-decoration: none;
   color: var(--text-white-color);
+}
+/*Responsive*/
+
+@media (min-width: 384px) {
+  .input-container form {
+    width: 80%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10dvh;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  main {
+    display: flex;
+    height: 80dvh;
+    flex-direction: row-reverse;
+  }
+
+  .card-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .card-container h2 {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 30%;
+    height: 50%;
+
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+  }
+
+  .card h3 {
+    width: 100%;
+    font-size: var(--font-size-md);
+  }
+
+  .card .productImg {
+    width: 80%;
+    height: 7rem;
+  }
+
+  .card--title {
+    font-size: var(--font-size-md);
+  }
+
+  footer {
+    height: 10dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .info_name h4,
+  p {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .info_links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+  }
+  .info_links a {
+    text-decoration: none;
+    color: var(--text-white-color);
+  }
 }

@@ -1,0 +1,30 @@
+{ 
+ "proyectos": [ 
+   { 
+      "id": 1,
+      "nombre": "Alura Tracker 3.0"
+    },
+    {
+      "id": 2,
+      "nombre": "ByteBank 2.0"
+     }
+     ],
+     "tareas": [
+     {
+       "id": 1,
+       "descripcion":
+       "Configuración del ambiente",
+       "proyecto": {
+       "id": 1,
+       "nombre": "Alura Tracker 3.0"
+       }
+      },
+     {   "descripcion": "Refactorización del vuex 4",
+         "proyecto": {
+         "id": 1,
+         "nombre": "Alura Tracker 3.0"
+         },
+         "id": 2
+         }
+      ]
+   }
