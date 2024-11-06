@@ -15,68 +15,16 @@
     <main>
       <section class="input-container">
         <h2>Add Products</h2>
-        <form action="">
-          <input type="text" placeholder="name..." />
-          <input type="number" placeholder="price..." />
-          <input type="text" placeholder="image..." />
-          <div class="input-container--btn">
-            <button>Send</button>
-            <button>Clear</button>
-          </div>
+        <form data-form>
+          <input type="text" placeholder="title..." data-title />
+          <input type="number" placeholder="price..." data-price />
+          <input type="url" placeholder="image..." data-image />
+          <input type="submit" />
         </form>
       </section>
       <section class="card-container">
         <h2>My Products</h2>
-        <div class="items-container">
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-          <article class="card">
-            <img class="productImg" />
-            <h3>Lorem, ipsum dolor.</h3>
-            <div class="card--title">
-              <p>$4440</p>
-              <img src="src/img/trash.png" alt="trash icon" />
-            </div>
-          </article>
-        </div>
+        <div class="items-container" data-list></div>
       </section>
     </main>
     <footer>
@@ -91,7 +39,7 @@
         >
       </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="js/createProduct.js" type="module"></script>
+    <script src="js/showProducts.js" type="module"></script>
   </body>
 </html>
