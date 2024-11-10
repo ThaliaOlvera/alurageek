@@ -8,7 +8,6 @@ async function createProduct(evento) {
   const image = document.querySelector("[data-image]").value;
 
   await apiConnection.sendProduct(title, price, image);
-  console.log(apiConnection.sendProduct(title, price, image));
 }
 
 form.addEventListener("submit", (evento) => createProduct(evento));
