@@ -1,6 +1,4 @@
-Aquí tienes una propuesta para un README atractivo y detallado para tu proyecto:
 
----
 
 # 🏥 Health Products - alurageek
 
