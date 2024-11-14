@@ -1,4 +1,4 @@
-const ApiURL = "http://localhost:3000/products";
+const ApiURL = "https://673644d1aafa2ef222300a9c.mockapi.io/products";
 
 async function productsList() {
   const connection = await fetch(ApiURL);
