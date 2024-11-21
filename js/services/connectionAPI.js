@@ -1,16 +1,17 @@
 const ApiURL = "https://673644d1aafa2ef222300a9c.mockapi.io/products";
 
-async function productsList() {
+async function listedProducts() {
   const connection = await fetch(ApiURL);
+  console.log(connection);
   const parseConnection = await connection.json();
-
+  console.log(parseConnection);
   return parseConnection;
 }
 
 async function sendProduct(title, price, image) {
   const connection = await fetch(ApiURL, {
     method: "POST",
-    headers: { "Conten-type": "application/json" },
+    headers: { "Content-type": "application/json" },
     body: JSON.stringify({
       title: title,
       price: price,
@@ -28,6 +29,9 @@ async function deleteProduct(id) {
 
   const connection = await fetch(`${ApiURL}/${id}`, {
     method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
   if (!connection.ok) {
@@ -40,7 +44,7 @@ async function deleteProduct(id) {
 }
 
 export const apiConnection = {
-  productsList,
+  listedProducts,
   sendProduct,
   deleteProduct,
 };

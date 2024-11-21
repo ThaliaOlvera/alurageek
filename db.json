@@ -13,16 +13,10 @@
       "image": "https://images.unsplash.com/photo-1579722822515-1562ad83b940?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "id": "ca56",
-      "title": "Creatinine",
-      "price": "679",
-      "image": " https://images.unsplash.com/photo-1693996045300-521e9d08cabc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": "672f",
-      "title": "Vitamins",
-      "price": "240",
-      "image": "https://images.unsplash.com/photo-1665758574784-7e549d53c7f7?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "title": "Vit D",
+      "price": "345",
+      "image": "https://images.unsplash.com/photo-1665758574784-7e549d53c7f7?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": "1"
     }
   ]
 }
